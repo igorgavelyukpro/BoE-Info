@@ -1,0 +1,14 @@
+*{
+  outline:1px solid black;
+}
+select{
+  margin:0;
+  padding:0;
+}
+.sqr{
+  display: inline-block;
+  background-color: #f00;
+  margin-top:10px;
+  height: 30px;
+  width: 30px;
+}
