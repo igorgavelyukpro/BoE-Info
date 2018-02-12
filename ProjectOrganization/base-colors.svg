@@ -1965,7 +1965,7 @@
     <use xlink:href="#b66" stroke="url(#b65)"/>
     <path id="b67" stroke-linecap="butt" d="M378.029,374.024 A145,102 0 0 1 302.971,374.024 L328.853,305.444 A45,31 0 0 0 352.147,305.444 L378.029,374.024 Z"/>
     <use xlink:href="#b67" fill="#3e2723" stroke="#ffffff" stroke-opacity="0.498"/>
-    
+
     <text id="b689" style="font-family:'Arial';font-size:10px;" x="160" y="351">Start</text><use xlink:href="#b689" fill="#000"/>
     <text id="b681" style="font-family:'Arial';font-size:10px;" x="227" y="291">Blue</text><use xlink:href="#b681" fill="#ffffff"/>
     <text id="b682" style="font-family:'Arial';font-size:10px;" x="197" y="301">#0d47a1</text><use xlink:href="#b682" fill="#000"/>
@@ -2015,43 +2015,5 @@
     <text id="b792" style="font-family:'Arial';font-size:10px;" x="242" y="340">#757575</text><use xlink:href="#b792" fill="#000"/>
     <text id="b79" style="font-family:'Arial';font-size:10px;" x="236" y="350">November</text><use xlink:href="#b79" fill="#ffffff"/>
 
-    <rect id="b80" x="29.5" y="60.5" width="6" height="6"/>
-    <use xlink:href="#b80" fill="#0d47a1" stroke="#c0c0c0"/>
-
-    <text id="b81" style="font-family:'Arial';font-size:10px;" x="39" y="67">December</text><use xlink:href="#b81" fill="#000"/>
-
-    <rect id="b82" x="109.5" y="60.5" width="6" height="6"/>
-    <use xlink:href="#b82" fill="#00838f" stroke="#c0c0c0"/>
-    <text id="b83" style="font-family:'Arial';font-size:10px;" x="119" y="67">January</text><use xlink:href="#b83" fill="#000"/>
-    <rect id="b84" x="177.5" y="60.5" width="6" height="6"/>
-    <use xlink:href="#b84" fill="#00796b" stroke="#c0c0c0"/>
-    <text id="b85" style="font-family:'Arial';font-size:10px;" x="187" y="67">February</text><use xlink:href="#b85" fill="#000"/>
-    <rect id="b86" x="249.5" y="60.5" width="6" height="6"/>
-    <use xlink:href="#b86" fill="#1b5e20" stroke="#c0c0c0"/>
-    <text id="b87" style="font-family:'Arial';font-size:10px;" x="259" y="67">March</text><use xlink:href="#b87" fill="#000"/>
-    <rect id="b88" x="310.5" y="60.5" width="6" height="6"/>
-    <use xlink:href="#b88" fill="#afb42b" stroke="#c0c0c0"/>
-    <text id="b89" style="font-family:'Arial';font-size:10px;" x="320" y="67">April</text><use xlink:href="#b89" fill="#000"/>
-    <rect id="b90" x="363.5" y="60.5" width="6" height="6"/>
-    <use xlink:href="#b90" fill="#ffeb3b" stroke="#c0c0c0"/>
-    <text id="b91" style="font-family:'Arial';font-size:10px;" x="373" y="67">May</text><use xlink:href="#b91" fill="#000"/>
-    <rect id="b92" x="414.5" y="60.5" width="6" height="6"/>
-    <use xlink:href="#b92" fill="#e65100" stroke="#c0c0c0"/>
-    <text id="b93" style="font-family:'Arial';font-size:10px;" x="424" y="67">June</text><use xlink:href="#b93" fill="#000"/>
-    <rect id="b94" x="468.5" y="60.5" width="6" height="6"/>
-    <use xlink:href="#b94" fill="#d50000" stroke="#c0c0c0"/>
-    <text id="b95" style="font-family:'Arial';font-size:10px;" x="478" y="67">July</text><use xlink:href="#b95" fill="#000"/>
-    <rect id="b96" x="518.5" y="60.5" width="6" height="6"/>
-    <use xlink:href="#b96" fill="#880e4f" stroke="#c0c0c0"/>
-    <text id="b97" style="font-family:'Arial';font-size:10px;" x="528" y="67">August</text><use xlink:href="#b97" fill="#000"/>
-    <rect id="b98" x="581.5" y="60.5" width="6" height="6"/>
-    <use xlink:href="#b98" fill="#6a1b9a" stroke="#c0c0c0"/>
-    <text id="b99" style="font-family:'Arial';font-size:10px;" x="591" y="67">September</text><use xlink:href="#b99" fill="#000"/>
-    <rect id="b100" x="29.5" y="73.5" width="6" height="6"/>
-    <use xlink:href="#b100" fill="#3e2723" stroke="#c0c0c0"/>
-    <text id="b101" style="font-family:'Arial';font-size:10px;" x="39" y="80">October</text><use xlink:href="#b101" fill="#000"/>
-    <rect id="b102" x="98.5" y="73.5" width="6" height="6"/>
-    <use xlink:href="#b102" fill="#757575" stroke="#c0c0c0"/>
-    <text id="b103" style="font-family:'Arial';font-size:10px;" x="108" y="80">November</text><use xlink:href="#b103" fill="#000"/>
-  </g>
+    </g>
 </svg>

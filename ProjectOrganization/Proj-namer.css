@@ -1,12 +1,57 @@
 *{
-  outline:1px solid black;
+  /* outline:1px solid black; */
+  /* display:inline-block; */
 }
-select{
-  margin:0;
-  padding:0;
+.container{
+  display: inline-grid;
+  grid-template-columns: 65% 35%;
+  margin: 1%;
 }
+.active-svg-element{
+  stroke: black;
+  stroke-width:10;
+}
+.blox{
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+svg{
+
+  width: 100%;
+  padding:-5%;
+  margin: -5%;
+}
+.separator{
+margin-bottom: 30px;
+}
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;       /* remove default arrow */
+   background: url(./if_valenticons-15_430719.svg) 98% / 20% no-repeat #eee;  /* add custom arrow */
+   width: 100%;
+   font-size: 16px;
+   border: 1px solid #ccc;
+   height: 34px;
+}
+input {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   width: 100%;
+   font-size: 16px;
+   border: 1px solid #ccc;
+   height: 30px;
+}
+fieldset{
+  top:0px;
+  width: 98%;
+  display:block;
+}
+
 .sqr{
-  display: inline-block;
   background-color: #f00;
   margin-top:10px;
   height: 30px;
