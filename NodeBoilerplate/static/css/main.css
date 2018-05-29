@@ -1,0 +1,43 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Titillium Web', sans-serif;
+  /* outline: 1px solid red; */
+  /*     border: 1px solid black; */
+}
+.big-text {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 2em;
+}
+.top-space {
+height: 300px;
+width: 100%;
+border:1px solid black;
+}
+.item {
+background-color: #ddffdd!important;
+}
+.item:hover {
+background-color: #88ff88!important;
+}
+h1, h3{
+  font-weight: heavy;
+  color: teal;
+}
+h1{
+  font-size: 40px!important;
+}
+h3{
+  font-size: 30px!important;
+}
+.certificate-list{
+  display: inline-block;
+}
+.certificate-object{
+  display: inline-block;
+  height: 30px;
+  margin:10px;
+
+  font-size: 20px;
+  border-bottom: 1px solid grey;
+}

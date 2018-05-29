@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nothing</title>
+  </head>
+  <body>
+    <span id="main"> Nothing HERE </span>
+    <script type="text/javascript">
+    function test2(){
+      var x = document.getElementById("main");
+      console.log(x);
+      for (var i = 0; i < 3000; i++) {
+        console.log(i);
+        x.innerHTML+='<span style="color:red">Id_'+i+"__"+'&#'+i+"</span><hr>";
+      }
+    };
+    test2();
+    </script>
+  </body>
+</html>

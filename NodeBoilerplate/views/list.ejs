@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Crew Zeus management tool">
+  <meta name="keywords" content="Crewzeus, gavelyuk, management tool, management, tool, gavelyuk.info">
+  <meta name="author" content="Igor Gavelyuk">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Crewzeus homepage" />
+  <meta property="og:description" content="Crew Management Tool" />
+  <meta property="og:image" content="./images/cz400x200.png" />
+  <meta property="og:url" content="http://gavelyuk.info/" />
+  <meta property="og:site_name" content="gavelyuk.info" />
+  <meta property="article:published_time" content="2018-04-04T23:52:59+00:00" />
+  <meta property="article:modified_time" content="2018-04-04T23:52:59+00:00" />
+  <meta property="og:updated_time" content="2018-04-04T23:52:59+00:00" />
+  <meta property="fb:app_id" content="155517061942207" />
+
+  <!-- <meta name="twitter:card" content="Preview">
+  <meta name="twitter:title" content="Crew management tool" />
+  <meta name="twitter:description" content="Web software design for managment of crew resources">
+  <meta name="twitter:image:src" content="http://gavelyuk.info/images/scr.jpg">
+  <meta name="twitter:site" content="@EvilEpicCoder">
+  <meta property="og:site_name" content="Igor Gavelyuk web page"> -->
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="favicon.ico">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+  <!-- <link rel="apple-touch-icon" sizes="152x152" href="http://gavelyuk.info/images/gavel_icon152.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://gavelyuk.info/images/gavel_icon120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://gavelyuk.info/images/gavel_icon76.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://gavelyuk.info/images/gavel_icon60.png">
+  <link rel="image_src" href="http://gavelyuk.info/images/scr.jpg"> -->
+  <meta content="index, follow">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/materialize/css/materialize.min.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="/materialize/nui/nouislider.min.css">
+  <script type="text/javascript" src="/materialize/nui/nouislider.min.js"></script>
+  <script type="text/javascript" src="/materialize/js/materialize.min.js"></script>
+  <script src="/js/jquery3.3.1.js"></script>
+
+  <title><%=status%></title>
+  <base target="_self">
+
+</head>
+  <body>
+    <style media="screen">
+      .rounded-corners{
+        font-weight: 300;
+        font-size: 0.8rem;
+        height: 14px;
+        border: 1px solid #A14BFE;;
+        border-radius: 2px;
+        margin:4px;
+        background-color: #A14BFE;
+        color: #fff;
+      }
+      .progress{
+        background-color: #FFFF92;
+      }
+      .determinate{
+          background-color: #A14BFE!important;
+      }
+      .collection a.collection-item{
+        color: #000!important;
+      }
+      .dorange{
+        background-color:#814D01;
+      }
+      .dgreen{
+        background-color:#018132;
+      }
+    </style>
+    <% for (var i = 0; i < idArray.length; i++) { %>
+      <div class="collection">
+        <a href="http://localhost:8000/read/<%=idArray[i]._id%>" class="collection-item" id="drag1" width="80" height="20"><span class="new badge blue" data-badge-caption="<%=idArray[i].basic.rank%>">
+        </span><%=idArray[i].basic.name%>&nbsp<%=idArray[i].basic.family%><span class="rounded-corners"><%=idArray[i].basic.age%></span><span class="rounded-corners"><%=idArray[i].basic.stars%></span><span class="rounded-corners black">9980&#8364;</span><span class="rounded-corners dgreen">&#566; <%=idArray[i].basic.tel%></span><span class="rounded-corners dorange">@<%=idArray[i].basic.email%></span></span>
+          <div class="progress">
+            <div class="determinate" style="width: 10%"></div>
+          </div>
+        </a>
+      </div>
+      <%}%>
+  </body>
+</html>

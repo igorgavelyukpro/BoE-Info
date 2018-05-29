@@ -1,0 +1,64 @@
+<hr>
+        <style media="screen">
+          .lred{
+            background-color: #fee;
+          }
+          .lgreen{
+            background-color: #efe;
+          }
+          .lblue{
+            background-color: #eef;
+          }
+          .lyell{
+            background-color: #ff8;
+          }
+          .solidborded{
+            border: 1px solid gray;
+            border-radius: 3px;
+          }
+        </style>
+        <% for (var i = 0; i < idArray.length; i++) { %>
+        <div class="solidborded">
+          <span><b>Basic</b></span>
+          <div class="lyell">
+            <span>Date available: <b><%=idArray[i].basic.availabledate%></b></span>
+            <span>Expire documents :<b><%=idArray[i].basic.expirestatus%></b></span>
+            <!-- <span>Middle: <b><%=idArray[i].basic.middle%></b></span> -->
+          </div>
+          <div class="lblue">
+            <span>Salary: <b><%=idArray[i].basic.salary%></b>EUR</span>
+            <span>Rank: <b><%=idArray[i].basic.rank%></b></span>
+            <span>Age: <b><%=idArray[i].basic.age%></b></span>
+            <span>Name: <b><%=idArray[i].basic.name%></b></span>
+            <span>Family: <b><%=idArray[i].basic.family%></b></span>
+            <span>Birthdate: <b><%=idArray[i].basic.birthdate%></b></span>
+          </div>
+          <div class="lgreen">
+            <span>Nationality: <b><%=idArray[i].basic.nationality%></b></span>
+            <span>Rated: <b><%=idArray[i].basic.stars%></b></span>
+            <span>Tel: <b><%=idArray[i].basic.tel%></b></span>
+            <span>e-mail: <b><%=idArray[i].basic.email%></b></span>
+          </div>
+          <div class="lred">
+            <span>Citizenship: <b><%=idArray[i].basic.citizenship%></b></span>
+            <span>Marital status :<b><%=idArray[i].basic.maritalstatus%></b></span>
+            <span>Tax no: <b><%=idArray[i].basic.taxation%></b></span>
+          </div>
+          <div class="lyell">
+            <span><b>Next Of Kin</b></span>
+            <span>Name: <b><%=idArray[i].nok.name%></b></span>
+            <span>Family: <b><%=idArray[i].nok.family%></b></span>
+            <span>Rank: <b><%=idArray[i].nok.rank%></b></span>
+            <span>Age: <b><%=idArray[i].nok.age%></b></span>
+          </div>
+          <div class="lred">
+            <span><b>Certificates</b></span>
+            <span>Certificate: <b><%=idArray[i].cert[0].name%></b></span>
+            <span>Country: <b><%=idArray[i].cert[0].country%></b></span>
+            <span>Number: <b><%=idArray[i].cert[0].number%></b></span>
+            <span>from: <b><%=idArray[i].cert[0].from%></b></span>
+            <span>to: <b><%=idArray[i].cert[0].to%></b></span>
+          </div>
+        </div>
+        <%}%>
+        <hr>

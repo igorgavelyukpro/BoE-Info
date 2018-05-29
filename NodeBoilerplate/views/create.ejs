@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Crew Zeus management tool">
+  <meta name="keywords" content="Crewzeus, gavelyuk, management tool, management, tool, gavelyuk.info">
+  <meta name="author" content="Igor Gavelyuk">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Crewzeus homepage" />
+  <meta property="og:description" content="Crew Management Tool" />
+  <meta property="og:image" content="http://gavelyuk.info/images/scr.jpg" />
+  <meta property="og:url" content="http://gavelyuk.info/" />
+  <meta property="og:site_name" content="gavelyuk.info" />
+  <meta property="article:published_time" content="2018-04-04T23:52:59+00:00" />
+  <meta property="article:modified_time" content="2018-04-04T23:52:59+00:00" />
+  <meta property="og:updated_time" content="2018-04-04T23:52:59+00:00" />
+  <meta property="fb:app_id" content="155517061942207" />
+
+  <meta name="twitter:card" content="Preview">
+  <meta name="twitter:title" content="Crew management tool" />
+  <meta name="twitter:description" content="Web software design for managment of crew resources">
+  <meta name="twitter:image:src" content="http://gavelyuk.info/images/scr.jpg">
+  <meta name="twitter:site" content="@EvilEpicCoder">
+  <meta property="og:site_name" content="Igor Gavelyuk web page">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="favicon.ico">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+  <link rel="apple-touch-icon" sizes="152x152" href="http://gavelyuk.info/images/gavel_icon152.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://gavelyuk.info/images/gavel_icon120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://gavelyuk.info/images/gavel_icon76.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://gavelyuk.info/images/gavel_icon60.png">
+  <link rel="image_src" href="http://gavelyuk.info/images/scr.jpg">
+  <meta content="index, follow">
+  <meta property="og:type" content="website">
+
+  <script src="/js/jquery3.3.1.js">
+  </script>
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/materialize/css/materialize.min.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="/materialize/nui/nouislider.min.css">
+  <script type="text/javascript" src="/materialize/nui/nouislider.min.js"></script>
+
+  <script type="text/javascript" src="/materialize/js/materialize.min.js"></script>
+
+  <title>Add crew</title>
+  <base target="_self">
+</head>
+
+<body>
+  <h1>Crew <%=id%></h1>
+  <h2><%=saved%></h2>
+  <div class="container">
+
+    <div class="row">
+      <div class="col s12 m10">
+        <div class="row">
+          <!-- <form class="" action="http://localhost:8000/update/<%=id%>" method="get"> -->
+            <form class="" action="http://localhost:8000/update/<%=id%>?_method=put" method="post">
+
+            <div class="input-field col s3">
+              <select id="rank" name="rank">
+              <option value="0" disabled selected>Choose rank</option>
+              <option value="Master">Master</option>
+              <option value="ChOff">Ch.Off</option>
+              <option value="2ndOff">2nd.Off</option>
+              <option value="3rdOff">3rd.Off</option>
+              <option value="ChEng">Ch.Eng</option>
+              <option value="2ndEng">2nd.Eng</option>
+              <option value="3rdEng">3rd.Eng</option>
+              <option value="MMOil">MM/Oil</option>
+              <option value="Bosun">Bosun</option>
+              <option value="AB">AB</option>
+              <option value="OS">OS</option>
+            </select>
+              <label>Rank</label>
+            </div>
+            <div class="input-field col s3">
+              <input id="first_name" type="text" name="name" class="validate">
+              <label for="first_name">Name</label>
+            </div>
+            <div class="input-field col s3">
+              <input id="last_name" type="text" name="family" class="validate">
+              <label for="last_name">Family</label>
+            </div>
+            <div class="input-field col s3">
+              <input id="middle_name" type="text" name="middle" class="validate">
+              <label for="middle_name">Middle</label>
+            </div>
+        <!-- </div> -->
+
+          <div class="input-field col s3">
+            <input id="availabledate" name="availabledate" type="text" class="datepicker">
+            <label for="availabledate">Date available</label>
+          </div>
+
+          <div class="input-field col s3">
+            <input id="birthdate" name="birthdate" type="text" class="validate">
+            <label for="birthdate">Birth DD mon YYYY</label>
+          </div>
+          <div class="input-field col s3">
+            <input id="age" name="age" type="number" class="validate">
+            <label for="age">Age</label>
+          </div>
+
+          <div class="input-field col s3">
+            <select id="stars" name="stars">
+              <option value="" disabled selected>Stars raited</option>
+              <option value="&#9679; &#9675; &#9675; &#9675; &#9675;">&#9679; &#9675; &#9675; &#9675; &#9675;</option>
+              <option value="&#9679; &#9679; &#9675; &#9675; &#9675;">&#9679; &#9679; &#9675; &#9675; &#9675;</option>
+              <option value="&#9679; &#9679; &#9679; &#9675; &#9675;">&#9679; &#9679; &#9679; &#9675; &#9675;</option>
+              <option value="&#9679; &#9679; &#9679; &#9679; &#9675;">&#9679; &#9679; &#9679; &#9679; &#9675;</option>
+              <option value="&#9679; &#9679; &#9679; &#9679; &#9679;">&#9679; &#9679; &#9679; &#9679; &#9679;</option>
+            </select>
+            <label>Stars</label>
+          </div>
+
+
+          <div class="input-field col s3">
+            <input id="salary" type="text" name="salary" class="validate">
+            <label for="salary">Salary</label>
+          </div>
+          <div class="input-field col s3">
+            <input id="telephone" type="text" name="tel" class="validate">
+            <label for="telephone">Telephone</label>
+          </div>
+          <div class="input-field col s3">
+            <input id="email" type="text" name="email" class="validate">
+            <label for="email">e-mail</label>
+          </div>
+          <div class="input-field col s3">
+            <input id="expire" type="text" name="expirespatus" class="validate">
+            <label for="expire">Exp first doc</label>
+          </div>
+
+          <div class="input-field col s3">
+            <select id="nationality" name="nationality">
+              <option value="Nothing" disabled selected>Nationality</option>
+              <option value="UKR">UKR</option>
+              <option value="RUS">RUS</option>
+              <option value="NDL">NDL</option>
+              <option value="UK">UK</option>
+              <option value="USA">USA</option>
+            </select>
+            <label>Nationality</label>
+          </div>
+          <div class="input-field col s3">
+            <select id="citizenship" name="citizenship">
+              <option value="lolka" disabled selected>Not selected</option>
+              <option value="Citizen">Citizen</option>
+              <option value="Allien">Allien</option>
+              <option value="Non citizen">Non citizen</option>
+              <option value="Stateless">Stateless</option>
+            </select>
+            <label>Citizenship</label>
+          </div>
+          <div class="input-field col s3">
+            <select id="maritalstatus" name="maritalstatus">
+              <option value="" disabled selected>Choose</option>
+              <option value="Single">Single</option>
+              <option value="Married">Married</option>
+              <option value="Divorced">Divorced</option>
+              <option value="Live together">Live together</option>
+              <option value="Widoved">Widoved</option>
+              <option value="Separated">Separated</option>
+            </select>
+            <label>Marital status</label>
+          </div>
+          <div class="input-field col s3">
+            <input id="taxation_number" type="text" name="taxation" class="validate">
+            <label for="taxation_number">Taxation number</label>
+          </div>
+        </div>
+        <hr>
+
+          <div class="s12">
+            <input class="btn-large red" type="submit" name="section_basic" value="Save">
+            <a href="main" class="btn-large blue">Main page</a>
+          </div>
+
+        </form>
+
+        <script type="text/javascript">
+          var bd = document.getElementById("birthdate");
+          bd.onkeydown = function() {
+            var convertedBD = Date.parse(bd.value)
+            var nowDate = Date.now();
+            var age = document.getElementById("age");
+            age.value = 0;
+            var total = ((nowDate - convertedBD) / 31718000000);
+            age.value = total.toFixed(0)
+            // console.log(parseInt(bdArr[2].regexp()));
+          };
+        </script>
+
+      </div>
+      <div class="col s12 m2">
+        <div class="card">
+          <div class="card-image">
+            <img src="/images/side400x400.png">
+            <span class="card-title">Feature &#8734;</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">&#43;</i></a>
+          </div>
+          <div class="card-content">
+            <p>13.04.2018</p>
+          </div>
+        </div>
+        <!-- start option -->
+        <form action="#">
+          <p>
+            <label>
+              <input name="group1" class="with-gap" type="radio" checked />
+              <span>Male</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="group1" class="with-gap" type="radio" />
+              <span>Female</span>
+            </label>
+          </p>
+        </form>
+        <!-- end option -->
+      </div>
+    </div>
+
+  </div>
+
+</body>
+<script type="text/javascript">
+  // var elem = document.querySelector('select');
+  // var instance = M.FormSelect.init(elem, options);
+
+  // Or with jQuery
+
+  $(document).ready(function() {
+    $('#rank').formSelect();
+    $('#stars').formSelect();
+    $('#expirestatus').formSelect();
+    $('#nationality').formSelect();
+    $('#citizenship').formSelect();
+    $('#maritalstatus').formSelect();
+    $('.datepicker').datepicker();
+  });
+</script>
+
+</html>

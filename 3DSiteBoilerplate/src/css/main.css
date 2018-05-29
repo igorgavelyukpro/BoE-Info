@@ -1,0 +1,134 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  /* outline: 1px solid red; */
+  /*     border: 1px solid black; */
+}
+
+body {
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+.center-wrapper {
+  position: relative;
+  top: 50px;
+  margin: auto;
+  width: 450px;
+}
+
+.btn-link {
+  height: 42px;
+  width: 42px;
+  text-decoration: none;
+  display: block;
+  padding: 2px;
+  border: 1px solid #000;
+  background: linear-gradient(gray, #fff, gray);
+  color: #fff
+}
+
+.btn-link:hover {
+  background: linear-gradient(white, gray, #fff);
+}
+
+.i-facebook, .i-fcc, .i-twitter, .i-vk, .i-insta {
+  float:left;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding: 0px 42px 42px 0px;
+  background-size: 42px 42px
+}
+.i-insta {
+  background-image: url(insta.png)
+}
+.i-twitter {
+  background-image: url(twitter.png)
+}
+
+.i-facebook {
+  background-image: url(facebook.png)
+}
+
+.i-vk {
+  background-image: url(vk.png)
+}
+
+.i-fcc {
+  background-image: url(fcc.png)
+}
+
+.big-margin {
+  display: inline-block !important;
+  margin: 10px;
+  border: 5px;
+}
+.m-block {
+  display: inline-block;
+}
+
+.fst-m-block {
+  display: inline-block;
+}
+
+.scd-m-block {
+  display: inline-block;
+}
+
+ul {
+  display: inline-block;
+  list-style-type: none;
+  /* padding: 70px; */
+}
+
+h1 {
+  font-family: 'Bungee Outline', cursive;
+  font-size: 3em;
+}
+
+h2 {
+  position: relative;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 16px;
+  font-size: 1em;
+  text-align: right;
+}
+
+header {
+  text-align: center;
+}
+
+section {
+  /* outline: 1px solid green; */
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 16px;
+  padding: 30px;
+}
+
+li {
+  display: inline;
+  float: left;
+  margin 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+li {
+  background-color: rgba(10, 10, 10, 0.2);
+}
+
+menu.m-block li:hover {
+  background-color: rgba(10, 10, 10, 0.4);
+}
+
+menu {
+  font-family: 'Squada One', cursive;
+  /* border: 2px solid black; */
+}

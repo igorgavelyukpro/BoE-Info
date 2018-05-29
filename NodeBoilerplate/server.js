@@ -14,7 +14,7 @@ const port = 8000;
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-// app.use(methodOverride('_method'));
+app.use(methodOverride('_method'));
 // MongoClient
 // const conn = mongoose.createConnection('mongodb://127.0.0.1:27017/test')
 // conn.once('open',()=>{
@@ -33,6 +33,10 @@ MongoClient.connect('mongodb://127.0.0.1:27017', (err, client) => {
   let newdb = client.db('test');
   // freeCodeCamp router
   require('./app/routes')(app, newdb);
+
+  // client.close();
+
+
 
   // base router
   // newdb.collection('temp').findOne({}, function (findErr, result) {
