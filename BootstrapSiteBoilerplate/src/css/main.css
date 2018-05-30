@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Allura|Gloria+Hallelujah|Great+Vibes|Indie+Flower|Lovers+Quarrel|Marck+Script|Megrim|Shadows+Into+Light|Tulpen+One");
+/*****************
+    HTML,BODY
+******************/
+html {
+  min-height: 100%;
+  position: relative; }
+
+body {
+  margin-bottom: 40px;
+  background: snow; }
+
+/*HEADER*/
+header {
+  height: 275px; }
+  header h1 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    font-family: 'Megrim', cursive;
+    color: #f48fb1;
+    font-weight: bolder;
+    border-bottom: 1px solid #F2F2F2;
+    width: 100%; }
+    header h1:hover {
+      color: #eb3270; }
+
+/*NAV*/
+nav {
+  margin-bottom: 20px; }
+  nav ul {
+    border-bottom: 1px solid #F2F2F2;
+    height: 80px;
+    width: 100%; }
+    nav ul li {
+      padding-top: 15px;
+      padding-bottom: 20px; }
+      nav ul li a {
+        color: #f48fb1; }
+        nav ul li a:hover {
+          color: #eb3270;
+          border-bottom: 2px solid #eb3270;
+          padding-bottom: 30px; }
+
+/**MAIN**/
+main span.image {
+  background-image: url("../img/cover.jpg");
+  background-size: cover;
+  height: 350px;
+  width: 100%;
+  display: inline-block; }
+
+main #folow-insta {
+  background-color: #f48fb1;
+  min-height: 100%;
+  margin-bottom: 30px;
+  padding-left: 25px; }
+
+main #about-nails {
+  background-color: #b3f4b8;
+  min-height: 100%;
+  margin-bottom: 30px; }
+
+.block {
+  height: 150px;
+  width: 100px;
+  background-color: blue;
+  position: relative;
+  margin: 10px;
+  float: left; }
+
+/*****************
+      FOOTER AREA
+******************/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* fixed height of the footer here */
+  height: 40px;
+  margin-bottom: 20px; }
