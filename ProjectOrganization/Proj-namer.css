@@ -3,23 +3,34 @@
   /* display:inline-block; */
 }
 .container{
-  display: inline-grid;
-  grid-template-columns: 65% 35%;
+  display: inline-blocks;
+  width: 50%;
+  /* grid-template-columns: 100% 100%; */
+  margin: 1%;
+}
+.splits{
+  width: 50%;
+  /* grid-template-columns: 100% 100%; */
   margin: 1%;
 }
 .active-svg-element{
   stroke: black;
   stroke-width:10;
 }
-.blox{
-  padding: 20px;
-  font-size: 20px;
-  text-align: center;
-  vertical-align: middle;
+.blox {
+    /* display: inline-block; */
+    width: 300px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    float: right;
+    top: 50px;
+    left: 50%;
+    position: absolute;
 }
 svg{
 
-  width: 100%;
+  width: 110%;
   padding:-5%;
   margin: -5%;
 }
@@ -30,7 +41,7 @@ select {
    -webkit-appearance: none;
    -moz-appearance: none;
    appearance: none;       /* remove default arrow */
-   background: url(./if_valenticons-15_430719.svg) 98% / 20% no-repeat #eee;  /* add custom arrow */
+   background: url(./background.png) 98% / 20% no-repeat #eee;  /* add custom arrow */
    width: 100%;
    font-size: 16px;
    border: 1px solid #ccc;
@@ -56,4 +67,40 @@ fieldset{
   margin-top:10px;
   height: 30px;
   width: 30px;
+}
+.b43, .january{
+  background-color:#00838f;
+}
+.b27, .february{
+  background-color:#00796b;
+}
+.b17, .march{
+  background-color:#1b5e20;
+}
+.b7, .april{
+  background-color:#afb42b;
+}
+.b16, .may{
+  background-color:#ffeb3b;
+}
+.b26, .june{
+  background-color:#e65100;
+}
+.b42, .july{
+  background-color:#d50000;
+}
+.b52, .august{
+  background-color:#880e4f;
+}
+.b63, .september{
+  background-color:#6a1b9a;
+}
+.b67, .october{
+  background-color:#3e2723;
+}
+.b62, .november{
+  background-color:#757575;
+}
+.b53, .december{
+  background-color: #0d47a1;
 }

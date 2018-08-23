@@ -8,6 +8,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
   console.log("DOM fully loaded and parsed");
   var current = new Date();
 
+  var yearName = {
+    '2017': "Rabbit",
+    '2018': "Foxy",
+    '2019': "Tiger",
+    '2020': "Mouse"
+  };
+
   var monthNameArray = [
     ['b43','Cyan', '#00838f', 'January', '31 days'],
     ['b27','Teal ', '#00796b', 'February', '28 days', '29 days in leap'],
@@ -26,9 +33,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var colorName = 1;
   var colorHex = 2;
   var monthName = 3;
+  var idy = yearName[current.getFullYear()];
+  console.log(idy);
   var id = monthNameArray[current.getMonth()][idEl];
   var x = document.getElementById(id);
   x.classList.add("active-svg-element");
+  var result = document.getElementById("result");
+  var a = document.getElementById("month-name");
+  var b = document.getElementById("main-name");
+  var c = document.getElementById("service-name");
+  a.addEventListener("change", Hello);
+  b.addEventListener("change", Hello);
+  c.addEventListener("change", Hello);
+  b.addEventListener("keyup", Hello);
+  c.addEventListener("keyup", Hello);
+
+  function Hello(){
+    // splitStr[i].charAt(0).toUpperCase()
+    return result.value = monthNameArray[a.selectedIndex-1][1]+idy+b.value.charAt(0).toUpperCase()+b.value.substring(1)+c.value.charAt(0).toUpperCase()+c.value.substring(1);
+  }
 
   console.log(monthNameArray[current.getMonth()][idEl]);
 });

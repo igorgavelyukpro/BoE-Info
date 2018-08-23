@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="uk-UA, en-GB">
 
@@ -14,7 +15,7 @@
 <body>
   <div class="container">
     <!-- main wrapper -->
-    <div class="blox">
+    <div class="">
       <svg viewBox="0 0 680 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
       <defs>
         <linearGradient id="b4" x1="386.5" y1="225.5" x2="292.867" y2="225.5" spreadMethod="pad" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#232408"/>
@@ -2034,29 +2035,47 @@
       </g>
     </svg>
     </div>
-    <div class="blox">
-      <div class="separator" contenteditable="true">
-        This text can be edited by the user.
-      </div>
-      <form id="general" action="index.html" method="post">
-        <fieldset>
-          <legend>Select month</legend>
-          <select id="month-name">
-          <option style="background-color:red" value="gfgfgf"><span class="sqr">Month</span></option>
-          <option value="value2" selected>Value 2</option>
-        </select>
-        </fieldset>
-        <fieldset>
-          <legend>Main name</legend>
-          <input type="text" name="" value="">
-        </fieldset>
-        <fieldset>
-          <legend>Service name</legend>
-          <input type="text" name="" value="">
-        </fieldset>
-      </form>
-    </div>
+
     <!-- end of main wrapper -->
+  </div>
+  <div class="blox">
+    <div class="separator" contenteditable="true">
+      This text can be edited by the user.
+    </div>
+    <form id="general" action="index.html" method="post">
+      <fieldset>
+        <legend>Select month</legend>
+        <select id="month-name">
+        <option style="background-color:white" value="NULL">
+          <span class="value">Select Month</span>
+        </option>
+        <option value="January" class="january">January</option>
+        <option value="February" class="february">February</option>
+        <option value="March" class="march">March</option>
+        <option value="April" class="april">April</option>
+        <option value="May" class="may">May</option>
+        <option value="June" class="june">June</option>
+        <option value="July" class="july">July</option>
+        <option value="August" class="august">August</option>
+        <option value="September" class="september">September</option>
+        <option value="October" class="october">October</option>
+        <option value="November" class="november">November</option>
+        <option value="December" class="december">December</option>
+      </select>
+      </fieldset>
+      <fieldset>
+        <legend>Main name</legend>
+        <input id="main-name" type="text" name="" value="">
+      </fieldset>
+      <fieldset>
+        <legend>Service name</legend>
+        <input id="service-name"type="text" name="" value="">
+      </fieldset>
+      <fieldset>
+        <legend>Result</legend>
+        <input id="result" type="text" name="" value="">
+      </fieldset>
+    </form>
   </div>
 </body>
 <!-- copy scrypt path start-->
