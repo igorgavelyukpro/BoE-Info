@@ -9,10 +9,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var current = new Date();
 
   var yearName = {
-    '2017': "Rabbit",
-    '2018': "Foxy",
-    '2019': "Tiger",
-    '2020': "Mouse"
+    '2017': "_rabbit",
+    '2018': "_foxy",
+    '2019': "_tiger",
+    '2020': "_mouse",
+    '2021': "_beaver"
   };
 
   var monthNameArray = [
@@ -50,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   function Hello(){
     // splitStr[i].charAt(0).toUpperCase()
-    return result.value = monthNameArray[a.selectedIndex-1][1]+idy+b.value.charAt(0).toUpperCase()+b.value.substring(1)+c.value.charAt(0).toUpperCase()+c.value.substring(1);
+    return result.value = monthNameArray[a.selectedIndex-1][1].toLowerCase()+idy+"_"+b.value.charAt(0).toLowerCase()+b.value.substring(1)+"_"+c.value.charAt(0).toLowerCase()+c.value.substring(1);
   }
 
   console.log(monthNameArray[current.getMonth()][idEl]);
