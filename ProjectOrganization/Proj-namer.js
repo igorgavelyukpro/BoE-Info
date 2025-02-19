@@ -13,7 +13,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     '2018': "_foxy",
     '2019': "_tiger",
     '2020': "_mouse",
-    '2021': "_beaver"
+    '2021': "_beaver",
+    '2022': "_horse",
+    '2023': "_mouse",
+    '2024': "_beaver",
+    '2025': "_dregon",
+    '2026': "_cat",
+    '2027': "_cow",
   };
 
   var monthNameArray = [
