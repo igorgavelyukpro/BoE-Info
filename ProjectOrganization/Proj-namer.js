@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     '2022': "_horse",
     '2023': "_mouse",
     '2024': "_beaver",
-    '2025': "_dregon",
+    '2025': "_dragon",
     '2026': "_cat",
     '2027': "_cow",
   };
