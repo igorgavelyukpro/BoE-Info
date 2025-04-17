@@ -9,17 +9,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var current = new Date();
 
   var yearName = {
-    '2017': "_rabbit",
-    '2018': "_foxy",
-    '2019': "_tiger",
-    '2020': "_mouse",
-    '2021': "_beaver",
-    '2022': "_horse",
-    '2023': "_mouse",
-    '2024': "_beaver",
-    '2025': "_dragon",
-    '2026': "_cat",
-    '2027': "_cow",
+    '2017': "-rabbit",
+    '2018': "-foxy",
+    '2019': "-tiger",
+    '2020': "-mouse",
+    '2021': "-beaver",
+    '2022': "-horse",
+    '2023': "-mouse",
+    '2024': "-beaver",
+    '2025': "-dragon",
+    '2026': "-cat",
+    '2027': "-cow",
   };
 
   var monthNameArray = [
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   function Hello(){
     // splitStr[i].charAt(0).toUpperCase()
-    return result.value = monthNameArray[a.selectedIndex-1][1].toLowerCase()+idy+"_"+b.value.charAt(0).toLowerCase()+b.value.substring(1)+"_"+c.value.charAt(0).toLowerCase()+c.value.substring(1);
+    return result.value = b.value.charAt(0).toLowerCase()+b.value.substring(1)+"-"+c.value.charAt(0).toLowerCase()+c.value.substring(1)+"-"+monthNameArray[a.selectedIndex-1][1].toLowerCase()+idy;
   }
 
   console.log(monthNameArray[current.getMonth()][idEl]);
